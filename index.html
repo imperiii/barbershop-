@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOIR BARBERS — Premium Men's Grooming</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Екран завантаження -->
+  <div id="loader" class="loader">
+    <div class="loader-text">NOIR</div>
+    <div class="loader-sub">BARBERS</div>
+  </div>
+
+  <!-- Шапка сайту -->
+  <header id="header" class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        NOIR<br><span>BARBERS</span>
+      </a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking" class="btn btn-primary">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Головний екран (Hero) -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1920&q=80" alt="Barbershop" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="label">EST. 2018 — PREMIUM GROOMING</p>
+      <h1>THE ART<br>OF MEN'S<br>GROOMING</h1>
+      <p class="subtitle">Precision cuts. Timeless style. Exceptional service.</p>
+      <a href="#booking" class="btn btn-primary">Book Your Chair</a>
+    </div>
+  </section>
+
+  <!-- Секція послуг -->
+  <section id="services" class="services container">
+    <p class="label">01 — SERVICES</p>
+    <h2>OUR SERVICES</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Signature Haircut</h3>
+        <span>$45</span>
+      </div>
+      <div class="service-item">
+        <h3>Beard Sculpt</h3>
+        <span>$30</span>
+      </div>
+      <div class="service-item">
+        <h3>Haircut & Beard</h3>
+        <span>$65</span>
+      </div>
+      <div class="service-item">
+        <h3>Executive Grooming</h3>
+        <span>$85</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секція галереї -->
+  <section id="gallery" class="gallery container">
+    <p class="label">02 — GALLERY</p>
+    <h2>THE NOIR LOOK</h2>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80" alt="Haircut" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80" alt="Fade" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Tools" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Секція бронювання -->
+  <section id="booking" class="booking">
+    <div class="container booking-container">
+      <div class="booking-text">
+        <p class="label">03 — RESERVE</p>
+        <h2>BOOK YOUR CHAIR.</h2>
+        <p>Your next great haircut is one click away.</p>
+      </div>
+      
+      <form id="bookingForm" class="booking-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email Address" required>
+        <button type="submit" class="btn btn-primary">Confirm Appointment</button>
+      </form>
+
+      <!-- Повідомлення про успіх (спочатку приховане) -->
+      <div id="successMessage" class="success-message" style="display: none;">
+        <h3>REQUEST RECEIVED!</h3>
+        <p>NOIR BARBERS will contact you shortly to confirm your booking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Підвал -->
+  <footer class="footer container">
+    <p>&copy; 2026 NOIR BARBERS. ALL RIGHTS RESERVED.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
